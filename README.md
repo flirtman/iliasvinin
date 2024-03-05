@@ -1,3 +1,8 @@
+# NPM
+This website created with node version 18.10.0
+You can download NVM here https://sourceforge.net/projects/nvm-for-windows.mirror/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
