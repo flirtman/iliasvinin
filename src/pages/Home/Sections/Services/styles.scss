@@ -1,0 +1,81 @@
+@import "src/assets/styles/colors";
+
+.slick-slide {
+  margin: 0 27px;
+
+  @media (max-width: 992px) {
+    margin: 0;
+    padding: 26px;
+  }
+}
+
+
+
+.slick-track {
+  width: max-content !important;
+}
+
+.sections-services {
+  background-color: $color-primary;
+  padding: 100px 0;
+
+  .slick-dots li button:before {
+    color: white;
+  }
+
+  .title-section {
+    color: white;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+
+
+    .t-line {
+      display: block;
+      height: 2px;
+      background-color: white;
+      width: 100px;
+    }
+
+    @media (max-width: 992px) {
+      padding: 0 26px;
+    }
+  }
+
+  .card {
+    color: white;
+    background-color: transparent;
+    border: 3px solid #fff;
+    padding: 25px 25px 16px 25px;
+    margin-bottom: 26px;
+
+    h3 {
+      text-align: center;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      font-weight: bold;
+    }
+    ul {
+
+    }
+    .price {
+      font-weight: bold;
+      font-size: 2em;
+      text-align: center;
+      border-top: 1px solid #fff;
+      padding-top: 8px;
+      margin-top: 16px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .slick-arrow {
+    display: none !important;
+  }
+}
+

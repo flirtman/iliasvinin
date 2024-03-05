@@ -1,0 +1,94 @@
+@import "src/assets/styles/colors";
+@import "src/assets/styles/fonts";
+
+.title-section {
+  font-family: $young-serif;
+  color: $color-primary;
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .t-line {
+    display: block;
+    height: 2px;
+    background-color: $color-primary;
+    width: 100px;
+  }
+}
+
+.sections-about-me {
+  background-color: $color-dark;
+  padding: 100px 0;
+
+  p {
+    .large {
+      font-size: 1.5em;
+    }
+    color: white;
+  }
+
+  .decor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .numb {
+      color: $color-primary;
+      font-size: 4em;
+      font-weight: bold;
+    }
+    .txt {
+      color: $color-primary;
+      font-size: 1.5rem;
+      line-height: 115%;
+    }
+  }
+
+  .col-l {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .col-r {
+    border-left: 1px solid #fff;
+    ul {
+      margin-top: 34px;
+      columns: 2;
+      color: white;
+    }
+
+    .title-col-r {
+      color: white;
+      font-weight: bold;
+      font-size: 2.5em;
+      border-bottom: 1px solid #fff;
+      padding-left: 60px;
+      margin-left: -50px;
+      padding-bottom: 16px;
+    }
+  }
+
+  .col-l-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .about-section-link {
+      width: 100px;
+      height: 100px;
+      background-color: $color-primary;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: $color-dark;
+      line-height: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}

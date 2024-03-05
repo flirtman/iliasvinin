@@ -1,0 +1,80 @@
+@import "src/assets/styles/colors";
+@import "src/assets/styles/fonts";
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.header-dynamic {
+  padding-top: 50px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h2 {
+    font-family: $young-serif;
+    font-size: 4em;
+    span {
+      color: $color-primary;
+    }
+  }
+
+  p {
+    font-family: $arial;
+    font-size: 1.5em;
+    span {
+      color: $color-primary;
+    }
+  }
+
+  a {
+    font-family: $arial;
+    font-size: 1em;
+    color: $color-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .left-col-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //height: calc(100vh - 150px);
+    color: white;
+    gap: 16px;
+    min-height: 50vh;
+
+    @media only screen and (max-width: 992px) {
+      height: auto;
+
+      h2 {
+        font-size: 3em;
+      }
+    }
+  }
+
+  .right-col-cont {
+    //height: calc(100vh - 150px);
+    align-items: end;
+
+    @media only screen and (max-width: 992px) {
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    > .row {
+      display: flex;
+      height: 100vh;
+    }
+  }
+}

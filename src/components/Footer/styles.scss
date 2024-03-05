@@ -1,0 +1,34 @@
+@import "src/assets/styles/colors";
+
+footer {
+  background-color: $color-dark;
+  color: $color-primary;
+  padding: 24px 0;
+  text-align: center;
+  ul {
+    padding: 0;
+    margin: 16px 0;
+    li {
+      list-style: none;
+      display: inline;
+      margin: 16px;
+      a {
+        color: $color-primary;
+        text-decoration: none;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    ul {
+      li {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

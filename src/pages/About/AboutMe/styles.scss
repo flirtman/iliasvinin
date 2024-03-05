@@ -1,0 +1,76 @@
+@import "src/assets/styles/colors";
+@import "src/assets/styles/fonts";
+
+
+
+.sections-about-me2 {
+  background-color: $color-dark;
+  padding: 100px 0;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+    float: left;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 16px;
+    margin-right: 16px;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  p {
+    .large {
+      font-size: 1.5em;
+    }
+    color: white;
+  }
+
+  .decor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .numb {
+      color: $color-primary;
+      font-size: 4em;
+      font-weight: bold;
+    }
+    .txt {
+      color: $color-primary;
+      font-size: 1.5rem;
+      line-height: 115%;
+    }
+  }
+
+  .col-l {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .col-r {
+    border-left: 1px solid #fff;
+    ul {
+      margin-top: 34px;
+      color: white;
+    }
+
+    .title-col-r {
+      color: white;
+      font-weight: bold;
+      font-size: 1.5em;
+      border-bottom: 1px solid #fff;
+      padding-left: 60px;
+      margin-left: -50px;
+      padding-bottom: 16px;
+    }
+  }
+}

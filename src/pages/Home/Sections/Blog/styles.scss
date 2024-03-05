@@ -1,0 +1,133 @@
+@import "src/assets/styles/colors";
+
+.section-blog {
+  padding: 56px 0;
+  background-color: $color-secondary;
+
+  .post-cont-large {
+    height: 400px;
+    min-width: 100%;
+    transition:all 1s ;
+    text-decoration: none;
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      transition: all 1s;
+      object-fit: cover;
+    }
+    .post-details {
+      order: 2;
+      color: white;
+      background-color: rgba(180, 132, 122,0.8);
+      padding: 16px;
+      height: 60px;
+      margin-top: -60px;
+      width: 100%;
+    }
+    &:hover {
+      img {
+        width: 150%;
+        height: 150%;
+        margin-left: -25%;
+        margin-top: -25%;
+      }
+    }
+  }
+
+  .post-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .post-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      align-items: center;
+      background-color: $color-primary;
+      color: white;
+      text-decoration: none;
+    }
+
+    .img-cont {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      object-position: center;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition:all 1s ;
+        object-fit: cover
+      }
+
+      .post-details {
+        color: white;
+        background-color: rgba(180, 132, 122,0.8);
+        padding: 16px;
+      }
+    }
+
+    &:hover {
+      .img-cont {
+        img {
+          width: 150%;
+          height: 150%;
+          margin-left: -25%;
+          margin-top: -25%;
+        }
+      }
+    }
+
+    .decor {
+      width: 25px;
+      height: 25px;
+      border-right:1px solid white;
+      border-bottom:1px solid white;
+      margin-left: auto;
+      margin-top: -36px;
+      margin-right: 12px;
+    }
+  }
+
+  .col-r {
+    max-height: 400px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-primary;
+      outline: 1px solid slategrey;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .col-r {
+      margin-top: 26px;
+    }
+  }
+}

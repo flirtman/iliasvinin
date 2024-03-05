@@ -1,0 +1,79 @@
+@import "src/assets/styles/colors";
+@import "src/assets/styles/fonts";
+
+.nav-container {
+  border-right: 1px solid $color-primary;
+  padding-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  max-height: 150px;
+
+  .fixed-top {
+    border-bottom: 1px solid $color-primary;
+    > .container {
+      border-right: 1px solid $color-primary;
+    }
+  }
+
+  a {
+    font-family: 'Arial';
+    font-size: 1em;
+    color: $color-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .bg-dark {
+    background-color: black;
+  }
+
+  .bottom-line {
+    height: 1px;
+    margin-top: -50px;
+    width: 50%;
+    float: right;
+  }
+
+  .navbar-toggler {
+    border: 0;
+    padding: 0;
+    font-size: 3em;
+    color: $color-primary;
+  }
+
+
+  .nav-link {
+    height: 57px;
+    margin-bottom: -16px;
+    display: flex;
+    border-bottom: 4px solid transparent;
+    color: $color-primary !important;
+
+    &.active {
+      color: white !important;
+      border-bottom: 4px solid $color-primary;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    #responsive-navbar-nav {
+      background-color: rgba(21, 18, 17, 0.9);
+      z-index: 1;
+      padding: 25px;
+      min-width: 50%;
+      position: fixed;
+      right: 0;
+      top: 73px;
+      height: 100vh;
+
+      .active {
+        border: 0;
+      }
+    }
+  }
+
+}
+
