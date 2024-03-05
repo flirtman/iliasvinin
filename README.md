@@ -1,5 +1,5 @@
-# NPM
-This website created with node version 18.10.0
+# NODE info
+This website created with node version 18.10.0 .\
 You can download NVM here https://sourceforge.net/projects/nvm-for-windows.mirror/
 
 
